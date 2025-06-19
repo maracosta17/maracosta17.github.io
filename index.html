@@ -1,31 +1,105 @@
-<h1>My portafolio</h1>
-# 🚀 My Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+      color: white;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #8b5cf6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    .hero p {
+      margin-top: 1rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+    .btn {
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #9333ea, #06b6d4);
+      border-radius: 9999px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+    .hero-img img {
+      border-radius: 9999px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid #06b6d4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>A.M portfolio</h2>
+    <nav>
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+  </header>
 
-Welcome to my developer portfolio! This project showcases my skills and projects, built with modern web technologies.
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Armel Munyaneza,</h1>
+      <h2>Software Engineer</h2>
+      <p>
+        Frontend engineer using html, css, javascript, typescript, react, and next.js.
+        Backend using node.js, .net core, express, sql, postgres, and prisma. Can assist in building
+        robust web, mobile, and desktop applications. Additionally, I can handle deployment tasks.
+      </p>
+      <a class="btn" href="#">Download CV</a>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Profile photo">
+    </div>
+  </section>
+</body>
+</html>
 
-## 🛠 Technologies Used
-
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animation**: [Framer motion](https://www.framer.com/motion/introduction/)
-
-## 🌟 Features
-
-- **Responsive Design**: Fully responsive design that looks great on any device.
-- **Interactive UI**: Smooth animations and interactions.
-- **Performance Optimized**: Fast loading times and optimized performance.
-- **SEO Friendly**: Built-in SEO features to enhance visibility on search engines.
-- **pwa**
-
-## 🚧 Installation and Setup
-
-To get a local copy up and running, follow these steps:
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/munyanezaarmel/portfolio.git
-
-   npm install
-   npm run dev
