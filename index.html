@@ -23,6 +23,13 @@
       align-items: center;
       margin-bottom: 6rem;
     }
+    nav {
+      position: relative;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
     nav a {
       color: white;
       margin-left: 2rem;
@@ -32,6 +39,45 @@
     }
     nav a:hover {
       color: #38bdf8;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1e293b;
+      min-width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+    }
+    .dropdown-content a:hover {
+      background-color: #334155;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .btn-purple {
+      background: linear-gradient(to right, #9333ea, #7c3aed);
+      padding: 0.7rem 1.5rem;
+      margin-left: 1rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .btn-purple:hover {
+      background: linear-gradient(to right, #7c3aed, #9333ea);
     }
     .hero {
       display: flex;
@@ -85,30 +131,20 @@
       border: 5px solid #06b6d4;
       box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
     }
-    .btn-purple {
-      background: linear-gradient(to right, #9333ea, #7c3aed);
-      padding: 0.7rem 1.5rem;
-      margin-left: 1rem;
-      border-radius: 9999px;
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .btn-purple:hover {
-      background: linear-gradient(to right, #7c3aed, #9333ea);
-    }
-    dialog {
-      border: none;
-      border-radius: 12px;
-    }
   </style>
 </head>
 <body>
   <header>
     <h2>Bienvenido a mi portafolio</h2>
-    <nav>
-      <a href="#laboratorios" class="btn-purple">Laboratorios</a>
+    <nav class="nav-links">
+      <!-- Menú desplegable de Proyectos -->
+      <div class="dropdown">
+        <a class="btn-purple" href="#">Proyectos</a>
+        <div class="dropdown-content">
+          <a href="https://github.com/maracosta17/lab2-inteligencia-artificial/blob/main/lab2%20-%20Clasificacion.ipynb" target="_blank">Viaje a Laboratorio</a>
+          <a href="https://github.com/maracosta17/TAREA2-IA/blob/main/index.html" target="_blank">Tarea 2</a>
+        </div>
+      </div>
       <a href="https://discord.com/channels/977642880996880414/1377069892011954327" class="btn-purple">Canal de Discord</a>
       <a href="https://github.com/ulatinaedupa" class="btn-purple">Curso de IA</a>
       <a href="https://github.com/ulatinaedupa/ArtificialIntelligence" class="btn-purple">Asignaciones</a>
