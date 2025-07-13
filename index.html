@@ -85,7 +85,7 @@
       border: 5px solid #06b6d4;
       box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
     }
-      .btn-purple {
+    .btn-purple {
       background: linear-gradient(to right, #9333ea, #7c3aed);
       padding: 0.7rem 1.5rem;
       margin-left: 1rem;
@@ -98,16 +98,20 @@
     .btn-purple:hover {
       background: linear-gradient(to right, #7c3aed, #9333ea);
     }
+    dialog {
+      border: none;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h2>Bienvenido a mi portafolio</h2>
     <nav>
-  <a href="https://discord.com/channels/977642880996880414/1377069892011954327" class="btn-purple">Canal de Discord</a>
-  <a href="https://github.com/ulatinaedupa" class="btn-purple">Curso de IA</a>
-  <a href="https://github.com/ulatinaedupa/ArtificialIntelligence" class="btn-purple">Asignaciones</a>
-</nav>
+      <a href="https://discord.com/channels/977642880996880414/1377069892011954327" class="btn-purple">Canal de Discord</a>
+      <a href="https://github.com/ulatinaedupa" class="btn-purple">Curso de IA</a>
+      <a href="https://github.com/ulatinaedupa/ArtificialIntelligence" class="btn-purple">Asignaciones</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -125,6 +129,37 @@
       <img src="93207365-1b79-415a-b47d-3e787798dc67.png" alt="Profile photo">
     </div>
   </section>
+
+  <!-- NUEVA SECCION: LABORATORIOS -->
+  <section id="laboratorios" style="margin-top: 6rem;">
+    <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem;">Laboratorios</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+      <div style="background-color: #1e293b; border-radius: 12px; max-width: 360px; overflow: hidden;">
+        <img src="https://raw.githubusercontent.com/maracosta17/lab2-inteligencia-artificial/main/img/portada-lab2.png" alt="Portada Lab 2" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 1rem;">
+          <span style="background-color: #9333ea; padding: 0.2rem 0.6rem; font-size: 0.75rem; border-radius: 9999px;">IA</span>
+          <h3 style="margin-top: 0.5rem; font-size: 1.25rem; font-weight: 600;">Laboratorio 2 - Clasificación</h3>
+          <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 0.5rem;">Modelo de árbol de decisión para predecir abandono de clientes (churn). Precisión: 94.8%</p>
+          <button onclick="document.getElementById('modal-lab2').showModal()" style="margin-top: 1rem; background-color: #7c3aed; border: none; padding: 0.6rem 1.2rem; color: white; border-radius: 8px; cursor: pointer;">Ver Detalles</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DETALLE LABORATORIO 2 -->
+  <dialog id="modal-lab2">
+    <form method="dialog" style="text-align: right;">
+      <button style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">&times;</button>
+    </form>
+    <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Perfil del Proyecto: Laboratorio 2 - Clasificación</h3>
+    <p><strong>Nombre del Estudiante:</strong> Maryorie Viluce</p>
+    <p><strong>Objetivo:</strong> Implementar un modelo de clasificación utilizando datos de clientes para predecir si abandonarán un servicio (churn).</p>
+    <p><strong>Lenguaje y herramientas:</strong> Python (Thonny), pandas, matplotlib, scikit-learn</p>
+    <p><strong>Resumen:</strong> Se cargó un CSV, se exploraron los datos, se entrenó un modelo de árbol de decisión y se evaluó su precisión.</p>
+    <p><strong>Resultado:</strong> DecisionTreeClassifier con precisión del 94.8%. Variable objetivo: <code>churn</code>.</p>
+    <p><strong>Conclusión:</strong> Se aplicó un flujo completo de trabajo de IA: datos, modelo y evaluación.</p>
+    <a href="https://github.com/maracosta17/lab2-inteligencia-artificial" target="_blank" style="display: inline-block; margin-top: 1rem; background-color: #9333ea; padding: 0.6rem 1.2rem; color: white; border-radius: 8px; text-decoration: none;">Ver en GitHub</a>
+  </dialog>
 </body>
 </html>
 
