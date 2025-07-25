@@ -106,7 +106,6 @@
       box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
     }
 
-    /* Sección de Proyectos */
     .projects {
       padding-top: 4rem;
     }
@@ -156,58 +155,29 @@
   </style>
 </head>
 <body>
-  <header>
-    <h2>Bienvenido a mi portafolio</h2>
-    <nav class="nav-links">
-      <a class="btn-purple" href="#proyectos">Proyectos</a>
-      <a href="https://discord.com/channels/977642880996880414/1377069892011954327" class="btn-purple">Canal de Discord</a>
-      <a href="https://github.com/ulatinaedupa" class="btn-purple">Curso de IA</a>
-      <a href="https://github.com/ulatinaedupa/ArtificialIntelligence" class="btn-purple">Asignaciones</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hello, I'm Maryorie Viluce,</h1>
-      <h2>Estudiante de Biomédica</h2>
+<!-- Aquí debería ir el contenido existente del cuerpo del portafolio original -->
+<!-- Nuevos proyectos añadidos al final -->
+<section class="projects">
+  <h2>Proyectos</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="bikes-alquiler.png" alt="Bike Rent">
+      <h3>Análisis Predictivo del Alquiler de Bicicletas mediante Técnicas de Aprendizaje Automático</h3>
       <p>
-        Ingeniera Biomédica en formación con sólidas competencias en mantenimiento de equipos y dispositivos biomédicos.
-        Enfocada en ventas y soporte técnico, destacando conocimientos en equipos de imagenología. 
-        Capacidad para interpretar normativas biomédicas y gestionar inventarios técnicos.
+        Este estudio explora el comportamiento del sistema de alquiler de bicicletas aplicando algoritmos supervisados como regresión lineal, árboles de decisión y KNN. Se utilizaron datos meteorológicos y temporales, y se evaluó el rendimiento con métricas como RMSE y R². El modelo KNN demostró ser particularmente eficaz para estimar la demanda diaria, lo cual puede ser útil para optimizar recursos en entornos urbanos.
       </p>
-      <a class="btn" href="CV-Viluce.pdf" download>Download CV</a>
+      <a href="https://github.com/maracosta17/Lab3/blob/main/Laboratorio%202%20-%20Alquiler%20de%20Bicicletas%20(1).ipynb" target="_blank">Ver en GitHub</a>
     </div>
-    <div class="hero-img">
-      <img src="93207365-1b79-415a-b47d-3e787798dc67.png" alt="Profile photo">
+
+    <div class="project-card">
+      <img src="tastybites-clustering.png" alt="Tasty Bites">
+      <h3>Clustering de Recetas para Optimización de Tráfico (Tasty Bites)</h3>
+      <p>
+        Se aplicaron técnicas de agrupamiento K-Means para segmentar recetas según sus valores nutricionales, categorías y porciones. El análisis permitió descubrir patrones significativos entre las recetas y facilitar una estrategia de contenido más eficiente para la plataforma Tasty Bytes. El proyecto identificó cuatro grupos relevantes que ayudan a comprender mejor el catálogo y orientar decisiones basadas en datos.
+      </p>
+      <a href="https://github.com/maracosta17/Tarea3" target="_blank">Ver en GitHub</a>
     </div>
-  </section>
-
-  <!-- Sección de Proyectos -->
-  <section id="proyectos" class="projects">
-    <h2>Proyectos</h2>
-    <div class="projects-grid">
-      
-      <!-- Proyecto 1 -->
-      <div class="project-card">
-        <img src="lab2-clasificacionfoto.png" alt="Lab 2">
-        <h3>Clasificación Binaria de Imágenes con Random Forest y KNN: Un Estudio Comparativo</h3>
-        <p>
-          Este proyecto analiza la eficacia de algoritmos de clasificación supervisada para procesar imágenes. Se entrenaron modelos sobre un conjunto binarizado del dataset Flavia, buscando diferenciar morfologías de hojas, y luego se aplicaron al reconocimiento de dígitos en MNIST, con enfoque en el número “7”. Se compararon KNN y Random Forest mediante curvas ROC, precisión-recall y matrices de confusión. Los resultados evidencian la superioridad de Random Forest en precisión y generalización, confirmando su adaptabilidad a distintos tipos de datos visuales.
-        </p>
-        <a href="https://github.com/maracosta17/lab2-inteligencia-artificial/blob/main/lab2%20-%20Clasificacion.ipynb" target="_blank">Ver en GitHub</a>
-      </div>
-
-      <!-- Proyecto 2 -->
-      <div class="project-card">
-        <img src="tarea2-titanic.png" alt="Tarea 2">
-        <h3>Machine Learning para Predecir el Transporte de Pasajeros en el Titanic Spaceship</h3>
-        <p>
-          Este proyecto implementa modelos de aprendizaje automático para estimar la probabilidad de que un pasajero haya sido “transportado” tras una anomalía a bordo de la nave espacial Titanic. A partir de un dataset simulado con variables como planeta de origen, cabina, edad y gasto en servicios, se aplicaron técnicas de análisis exploratorio, limpieza de datos y clasificación con algoritmos como Random Forest y Gradient Boosting. El objetivo fue construir un modelo predictivo sólido y evaluar su precisión utilizando métricas como accuracy y F1-score.
-        </p>
-        <a href="https://github.com/maracosta17/TAREA2-IA/blob/main/Tarea2.ipynb" target="_blank">Ver en GitHub</a>
-      </div>
-
-    </div>
-  </section>
+  </div>
+</section>
 </body>
 </html>
