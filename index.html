@@ -6,152 +6,33 @@
   <title>Maryorie Viluce - Portafolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at top left, #0f172a, #1e293b);
-      color: white;
-      padding: 2rem;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 6rem;
-    }
-    nav {
-      position: relative;
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-    }
-    nav a {
-      color: white;
-      margin-left: 2rem;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #38bdf8;
-    }
-    .btn-purple {
-      background: linear-gradient(to right, #9333ea, #7c3aed);
-      padding: 0.7rem 1.5rem;
-      margin-left: 1rem;
-      border-radius: 9999px;
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-    .btn-purple:hover {
-      background: linear-gradient(to right, #7c3aed, #9333ea);
-    }
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 3rem;
-    }
-    .hero-text {
-      flex: 1;
-      max-width: 600px;
-    }
-    .hero h1 {
-      font-size: 3.5rem;
-      background: linear-gradient(to right, #9333ea, #06b6d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 800;
-    }
-    .hero h2 {
-      font-size: 2.2rem;
-      margin-top: 1rem;
-      font-weight: 700;
-    }
-    .hero p {
-      margin-top: 1.5rem;
-      line-height: 1.7;
-      color: #cbd5e1;
-      font-size: 1.1rem;
-    }
-    .btn {
-      margin-top: 2.5rem;
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      background: linear-gradient(to right, #9333ea, #06b6d4);
-      border-radius: 9999px;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-      font-size: 1rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-    .hero-img {
-      flex-shrink: 0;
-    }
-    .hero-img img {
-      border-radius: 9999px;
-      width: 260px;
-      height: 260px;
-      object-fit: cover;
-      border: 5px solid #06b6d4;
-      box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: radial-gradient(circle at top left, #0f172a, #1e293b); color: white; padding: 2rem; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6rem; }
+    nav { position: relative; }
+    .nav-links { display: flex; align-items: center; }
+    nav a { color: white; margin-left: 2rem; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #38bdf8; }
+    .btn-purple { background: linear-gradient(to right, #9333ea, #7c3aed); padding: 0.7rem 1.5rem; margin-left: 1rem; border-radius: 9999px; text-decoration: none; color: white; font-weight: 600; transition: background 0.3s; }
+    .btn-purple:hover { background: linear-gradient(to right, #7c3aed, #9333ea); }
+    .hero { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 3rem; }
+    .hero-text { flex: 1; max-width: 600px; }
+    .hero h1 { font-size: 3.5rem; background: linear-gradient(to right, #9333ea, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+    .hero h2 { font-size: 2.2rem; margin-top: 1rem; font-weight: 700; }
+    .hero p { margin-top: 1.5rem; line-height: 1.7; color: #cbd5e1; font-size: 1.1rem; }
+    .btn { margin-top: 2.5rem; display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(to right, #9333ea, #06b6d4); border-radius: 9999px; font-weight: bold; color: white; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); }
+    .hero-img { flex-shrink: 0; }
+    .hero-img img { border-radius: 9999px; width: 260px; height: 260px; object-fit: cover; border: 5px solid #06b6d4; box-shadow: 0 0 30px rgba(6, 182, 212, 0.5); }
 
-    .projects {
-      padding-top: 4rem;
-    }
-    .projects h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      color: #9333ea;
-    }
-    .projects-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .project-card {
-      background-color: #1e293b;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      max-width: 320px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .project-card img {
-      width: 100%;
-      border-radius: 0.5rem;
-    }
-    .project-card h3 {
-      margin-top: 1rem;
-      color: #facc15;
-    }
-    .project-card p {
-      color: #cbd5e1;
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-    }
-    .project-card a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: #60a5fa;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    .projects { padding-top: 4rem; }
+    .projects h2 { text-align: center; font-size: 2.5rem; color: #9333ea; }
+    .projects-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
+    .project-card { background-color: #1e293b; border-radius: 1rem; padding: 1.5rem; max-width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; border-radius: 0.5rem; }
+    .project-card h3 { margin-top: 1rem; color: #facc15; }
+    .project-card p { color: #cbd5e1; font-size: 0.9rem; margin-top: 0.5rem; }
+    .project-card a { display: inline-block; margin-top: 1rem; color: #60a5fa; font-weight: bold; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -215,8 +96,46 @@
         <p>Mediante K-Means, se agruparon recetas según características nutricionales y de categoría. Se identificaron 4 segmentos que mejoran la comprensión del catálogo de recetas y optimizan decisiones de contenido.</p>
         <a href="https://github.com/maracosta17/Tarea3" target="_blank">Ver en GitHub</a>
       </div>
+
+      <!-- Proyecto 5 (Nuevo) -->
+      <div class="project-card">
+        <img src="Detección de Objetos Personalizada con YOLOv5.png" alt="Detección de drones con YOLOv5">
+        <h3>Detección de Objetos Personalizada con YOLOv5</h3>
+        <p>
+          Se construyó un detector de <em>drones</em> empleando YOLOv5-m, buscando un balance entre rapidez y exactitud.
+          El dataset de Kaggle se depuró a 526 imágenes con partición 70/10/20. El pipeline recorre la instalación del
+          entorno, preparación y visualización de datos, entrenamiento y pruebas, y culmina con inferencia sobre imágenes
+          nuevas para validar el desempeño del modelo en un dominio específico.
+        </p>
+        <a href="https://github.com/maracosta17/Lab4" target="_blank">Ver en GitHub</a>
+      </div>
+
+      <!-- Proyecto 6 (Nuevo) -->
+      <div class="project-card">
+        <img src="Transfer learning.png" alt="Transfer Learning con EfficientNetV2-B0">
+        <h3>Transfer Learning</h3>
+        <p>
+          Se aplicó aprendizaje por transferencia con EfficientNetV2-B0 preentrenada en ImageNet: se retiró la cabeza
+          de clasificación, se añadieron capas propias y se congeló el backbone convolucional para entrenar solo el nuevo
+          clasificador. Con aumento y normalización de datos (ImageDataGenerator), se obtuvo una convergencia más rápida
+          y mejor rendimiento en escenarios con pocos ejemplos.
+        </p>
+        <a href="https://github.com/maracosta17/Tarea4" target="_blank">Ver en GitHub</a>
+      </div>
+
+      <!-- Proyecto 7 (Nuevo) -->
+      <div class="project-card">
+        <img src="Self driving.png" alt="Self-Driving en simulador">
+        <h3>Self Driving</h3>
+        <p>
+          Proyecto de conducción autónoma end-to-end: se depuró y reentrenó el modelo, se sirvió vía Flask/Socket.IO y
+          se validó en el simulador en modo autónomo. A partir de la imagen frontal, la red predice el ángulo de giro
+          (y aceleración) para mantener el vehículo en la pista.
+        </p>
+        <a href="https://github.com/maracosta17/Mid-Term" target="_blank">Ver en GitHub</a>
+      </div>
+
     </div>
   </section>
 </body>
 </html>
-
